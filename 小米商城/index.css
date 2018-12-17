@@ -46,7 +46,7 @@ a{
   width: 820px;
   height: 88px;
   margin: 0 100px;
-  padding: 40px 0px 0 150px;
+  padding: 40px 0px 0 120px;
   list-style-type: none;
   font-size: 16px;
 }
@@ -105,12 +105,12 @@ a{
 
 .xc1226 ul{
   position: absolute;
-  left: 275px;
+  left: 179px;
   top: 159px;
   background-color:rgba(0, 0, 0, 0.6) ;
   list-style-type: none;
   line-height: 37px;
-  padding: 24px 0px 3px 30px;
+  padding: 24px 0px 3px 20px;
   width: 234px;
   height: 433px;
 }
@@ -214,4 +214,147 @@ li {
 
 .tupian4{
   margin-left: 14px;
+}
+
+.home-recm-box-xc {
+    margin-bottom: 22px;
+}
+
+.home-brick-box-xc {
+    margin-bottom: 8px;
+}
+
+.box-hd-xc {
+  position: relative;
+  height: 58px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.title-xc {
+  margin-left: 170px;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+}
+
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.xm-recommend-xc{
+  width: 1500px;
+  float: left;
+  margin-left: 25px;
+}
+
+.xm-recommend-xc ul{
+  list-style-type: none;
+}
+
+.usb{
+  margin: 10px 0 0 120px;
+  float: left;
+}
+
+.usb-xc-1{
+  margin-left: 10px;
+  color: #333;
+}
+
+.usb-xc-2{
+  margin-left: 40px;
+  color: #ff6700;
+}
+
+.usb-xc-3{
+  margin-left: 30px;
+  color: #757575;
+}
+
+.monkey{
+  margin: 10px 0 0 120px;
+  float: left;
+}
+
+.monkey-xc-1{
+  margin-left: 10px;
+  color: #333;
+}
+
+.monkey-xc-2{
+  margin-left: 40px;
+  color: #ff6700;
+}
+
+.monkey-xc-3{
+  margin-left: 30px;
+  color: #757575;
+}
+
+.shoes{
+  margin: 10px 0 0 120px;
+  float: left;
+}
+
+.shoes-xc-1{
+  margin-left: 10px;
+  color: #333;
+}
+
+.shoes-xc-2{
+  margin-left: 40px;
+  color: #ff6700;
+}
+
+.shoes-xc-3{
+  margin-left: 30px;
+  color: #757575;
+}
+
+.ribbit{
+  margin: 10px 0 0 120px;
+  float: left;
+}
+
+.ribbit-xc-1{
+  margin-left: 10px;
+  color: #333;
+}
+
+.ribbit-xc-2{
+  margin-left: 40px;
+  color: #ff6700;
+}
+
+.ribbit-xc-3{
+  margin-left: 30px;
+  color: #757575;
+}
+
+.bag{
+  margin: 10px 0 0 120px;
+  float: left;
+}
+
+.bag-xc-1{
+  margin-left: 10px;
+  color: #333;
+}
+
+.bag-xc-2{
+  margin-left: 40px;
+  color: #ff6700;
+}
+
+.bag-xc-3{
+  margin-left: 30px;
+  color: #757575;
 }
