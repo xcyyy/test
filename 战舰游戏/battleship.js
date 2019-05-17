@@ -41,19 +41,19 @@ ships: [{locations:[0,0,0],hits:["","",""]},
     return false;
   },
   isSunk: function(ship) {
-    var count;
+    var count = 0;
     for (var i = 0;i < this.shipLength;i++) {
       if(ship.hits[i] ==="hit"){
-        count++
-        if(count < this.shipLength*0.67){
-          return false;
-        }
-        return true;
+      count++
+      if(count > model.shipLength*0.67){
+        return false;
       }
+        return true;
     }
-  },
+  }
+},
   generateShipLocations: function() {
-    var location;
+    var location = 0;
     for (var i = 0;i < this.numShips;i++) {
       do {
         locations = this.generateShip();
