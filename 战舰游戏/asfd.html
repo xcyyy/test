@@ -1,0 +1,21 @@
+isSunk: function(ship) { 
+  var count = 0;
+  for (var i = 0;i < this.shipLength;i++) {
+    if(ship.hits[i] ==="hit"){
+      count++;
+    }
+    if (count === 1){
+      for (var j = 0;j < this.shipLength;j++) {
+        document.getElementById(ship.locations[j]).style.backgroundImage="url('ship.png')"
+      }
+      } else {
+      for (var f = 0;f < this.shipLength;f++){
+        document.getElementById(ship.locations[f]).style.backgroundImage="url('boom.png')"
+      }
+      }
+    if(count > this.shipLength*0.666){
+      return true;
+    }
+  };
+      return false;
+  },

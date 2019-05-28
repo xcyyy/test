@@ -10,7 +10,11 @@ var view={
   displayMiss: function(location) {
     var cell = document.getElementById(location);
     cell.setAttribute("class","miss");
-  }
+  },
+  displayImg: function(img) {
+    var cell = document.getElementById(img);
+    cell.setAttribute("class","img");
+  },
 };
 
 var model = {
@@ -18,9 +22,9 @@ var model = {
   numShips: 3,
   shipLength: 3,
   shipSunk: 0,
-ships: [{locations:[0,0,0],hits:["","",""]},
-        {locations:[0,0,0],hits:["","",""]},
-        {locations:[0,0,0],hits:["","",""]}],
+ships: [{locations:[0,0,0],hits:["","",""],isSunk:false,isShown:false},
+        {locations:[0,0,0],hits:["","",""],isSunk:false,isShown:false},
+        {locations:[0,0,0],hits:["","",""],isSunk:false,isShown:false}],
   fire: function(guess) {
     for (var i = 0;i < this.numShips;i++) {
       var ship = this.ships[i];
@@ -29,6 +33,7 @@ ships: [{locations:[0,0,0],hits:["","",""]},
         ship.hits[index] = "hit";
         view.displayHit(guess);
         view.displayMessage("HIT!");
+        view.displayImg(guess);
         if (this.isSunk(ship)) {
           view.displayMessage("You sank my battleship!");
           this.shipSunk++;
@@ -40,19 +45,18 @@ ships: [{locations:[0,0,0],hits:["","",""]},
     view.displayMessage("You missed.");
     return false;
   },
-  isSunk: function(ship) {
+  isSunk: function(ship) { 
     var count = 0;
     for (var i = 0;i < this.shipLength;i++) {
+      document.getElementById(ship.locations[i]).style.backgroundImage="url('ship.png')"
+      view.displayHit(ship.locations[i])
       if(ship.hits[i] ==="hit"){
+        document.getElementById(ship.locations[i]).style.backgroundImage="url('boom.png')"
         count++;
       }
-      if (count === 1){
-        for (var j = 0;j < this.shipLength;j++) {
-          document.getElementById(ship.locations[j]).style.backgroundColor='green'
-        }
-        } else {
+      if (count*10>model.shipLength*6){
         for (var f = 0;f < this.shipLength;f++){
-          document.getElementById(ship.locations[f]).style.backgroundColor='red'
+          document.getElementById(ship.locations[f]).style.backgroundImage="url('boom.png')"
         }
         }
       if(count > this.shipLength*0.666){
