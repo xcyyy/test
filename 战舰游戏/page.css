@@ -1,0 +1,8 @@
+body {
+  size: 1000px;
+}
+
+img {
+  position: relative;
+  padding: 0px 100px 0px 10px;
+}
