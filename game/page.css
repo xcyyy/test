@@ -1,27 +1,22 @@
-
 .box1 {
-
   position: relative;
-  width: 20px;
+  top: 350px;
+  width: 200px;
   height: 200px;
   text-align: center;
   margin:  auto;
   border-radius:5px;
 }
 
-.box3{
-  width: 100%;
-  height: 60px;
-  background:gold;
-  float:right;
-  box-shadow: -5px 1px 10px black;
-  margin: auto;
-  border-radius:5px;
-}
-
 #a1 {
   background:gold;
 }
+
 #a2 {
   background:deepskyblue;
+}
+
+#tupian2 {
+  position: absolute;
+  top: 0px;
 }
